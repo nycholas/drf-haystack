@@ -44,8 +44,9 @@ An example using the autocomplete filter might look something like this.
 
         class Meta:
             index_models = [Location]
-            serializer_class = AutocompleteSerializer
             filter_backends = [HaystackAutocompleteFilter]
+        
+        serializer_class = AutocompleteSerializer
 
 
 GEO Locations
